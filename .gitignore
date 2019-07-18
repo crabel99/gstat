@@ -1,13 +1,20 @@
 # Ignore files generated during testing
 cmd/*pr
 cmd/lzn*
+zincmap.eas
 
 # Ignore object libraries
 meschach/*.o
 src/*.o
+config.status
+src/version.h
+machine.h
+config.cache
 
-# Ignore binary file
+# Ignore binary/library files
 src/gstat
+libmeschach.a
+maxint
 
 # Ignore the .vscode directory
 .vscode
@@ -168,3 +175,4 @@ $RECYCLE.BIN/
 
 # Mac desktop service store files
 .DS_Store
+src/version.h
