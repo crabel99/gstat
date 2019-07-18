@@ -12,9 +12,20 @@ machine.h
 config.cache
 
 # Ignore binary/library files
-src/gstat
 libmeschach.a
 maxint
+src/.cvsignore
+src/gstat
+src/config.h
+src/makefile
+src/lex.c
+src/parse.c
+src/parse.h
+meschach/machine.h
+meschach/config.log
+meschach/config.status
+meschach/makefile
+meschach/.cvsignore
 
 # Ignore the .vscode directory
 .vscode
