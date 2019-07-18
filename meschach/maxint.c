@@ -25,7 +25,7 @@
 
 #include <stdio.h>
 
-main()
+int main(void)
 {
     int		i, old_i;
 
@@ -36,4 +36,5 @@ main()
 	i = (i << 1) | 1;
     }
     printf("%d\n", old_i);
+    return 0;
 }

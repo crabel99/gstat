@@ -133,15 +133,21 @@ MAT     *mat;
 #elif REAL == FLOAT
 	       } while ( *line=='\0' || sscanf(line,"%f",&mat->me[i][j])<1 );
 #endif
-	  fprintf(stderr,"Continue: ");
-	  fscanf(fp,"%c",&c);
-	  if ( c == 'n' || c == 'N' )
-	  {    dynamic = FALSE;                 goto redo;      }
-	  if ( (c == 'b' || c == 'B') /* && i > 0 */ )
-	  {     if ( i > 0 )
-		    i--;
-		dynamic = FALSE;        goto redo;
-	  }
+	     fprintf(stderr,"Continue: ");
+	     if ( fscanf(fp,"%c",&c) )
+          {
+	          if ( c == 'n' || c == 'N' )
+               {
+                   dynamic = FALSE;
+                   goto redo;
+               }
+	          if ( (c == 'b' || c == 'B') /* && i > 0 */ )
+	          {
+                    if ( i > 0 ) i--;
+		          dynamic = FALSE;
+                    goto redo;
+	          }
+          }
      }
      
      return (mat);

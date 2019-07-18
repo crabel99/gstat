@@ -33,7 +33,7 @@ double	fclean(double x)
     return y;	/* prevents optimisation */
 }
 
-main()
+int main(void)
 {
     static float	feps, feps1, ftmp;
 
@@ -42,4 +42,5 @@ main()
 	feps = 0.5*feps;
 
     printf("%g\n", 2.0*feps);
+    return 0;
 }
