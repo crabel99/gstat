@@ -45,17 +45,17 @@
 
 
 /* available standard types */
-#define TYPE_NULL              (-1)
-#define TYPE_MAT    	        0
-#define TYPE_BAND               1
+#define TYPE_NULL  (-1)
+#define TYPE_MAT    	0
+#define TYPE_BAND    1
 #define TYPE_PERM		2
 #define TYPE_VEC		3
 #define TYPE_IVEC		4
 
 #ifdef SPARSE
 #define TYPE_ITER		5
-#define TYPE_SPROW              6
-#define TYPE_SPMAT		7
+#define TYPE_SPROW   6
+#define TYPE_SPMAT   7
 #endif
 
 #ifdef COMPLEX

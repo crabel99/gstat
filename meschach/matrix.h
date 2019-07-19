@@ -35,7 +35,7 @@
 #define	MATRIXH	
 
 #include	"machine.h"
-#include        "err.h"
+#include    "err.h"
 #include 	"meminfo.h"
 
 /* unsigned integer type */

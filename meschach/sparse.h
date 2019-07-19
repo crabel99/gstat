@@ -32,9 +32,7 @@
 /* RCS id: $Id: sparse.h,v 1.1.1.1 2003-06-23 18:32:00 cees Exp $ */
 
 #ifndef SPARSEH
-
 #define SPARSEH 
-
 
 #include        "matrix.h"
 

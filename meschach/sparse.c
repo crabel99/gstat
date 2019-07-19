@@ -30,7 +30,7 @@
 
 #include	<stdio.h>
 #include	<math.h>
-#include        <stdlib.h>
+#include <stdlib.h>
 #include	"sparse.h"
 
 
