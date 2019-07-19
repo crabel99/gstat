@@ -91,7 +91,7 @@ FILE    *fp;
 MAT     *mat;
 {
      char       c;
-     u_int      i, j, m, n, dynamic;
+     unsigned int      i, j, m, n, dynamic;
      /* dynamic set to TRUE if memory allocated here */
      
      /* get matrix size */
@@ -158,7 +158,7 @@ MAT     *bm_finput(fp,mat)
 FILE    *fp;
 MAT     *mat;
 {
-     u_int      i,j,m,n,dummy;
+     unsigned int      i,j,m,n,dummy;
      int        io_code;
      
      /* get dimension */
@@ -207,8 +207,8 @@ PERM    *ipx_finput(fp,px)
 FILE    *fp;
 PERM    *px;
 {
-     u_int      i,j,size,dynamic; /* dynamic set if memory allocated here */
-     u_int      entry,ok;
+     unsigned int      i,j,size,dynamic; /* dynamic set if memory allocated here */
+     unsigned int      entry,ok;
      
      /* get permutation size */
      if ( px!=(PERM *)NULL && px->size<MAXDIM )
@@ -261,7 +261,7 @@ PERM    *bpx_finput(fp,px)
 FILE    *fp;
 PERM    *px;
 {
-     u_int      i,j,size,entry,ok;
+     unsigned int      i,j,size,entry,ok;
      int        io_code;
      
      /* get size of permutation */
@@ -316,7 +316,7 @@ VEC     *ifin_vec(fp,vec)
 FILE    *fp;
 VEC     *vec;
 {
-     u_int      i,dim,dynamic;  /* dynamic set if memory allocated here */
+     unsigned int      i,dim,dynamic;  /* dynamic set if memory allocated here */
      
      /* get vector dimension */
      if ( vec != (VEC *)NULL && vec->dim<MAXDIM )
@@ -361,7 +361,7 @@ VEC     *bfin_vec(fp,vec)
 FILE    *fp;
 VEC     *vec;
 {
-     u_int      i,dim;
+     unsigned int      i,dim;
      int        io_code;
      
      /* get dimension */
@@ -407,7 +407,7 @@ void    m_foutput(fp,a)
 FILE    *fp;
 MAT     *a;
 {
-     u_int      i, j, tmp;
+     unsigned int      i, j, tmp;
      
      if ( a == (MAT *)NULL )
      {  fprintf(fp,"Matrix: NULL\n");   return;         }
@@ -430,12 +430,12 @@ void    px_foutput(fp,px)
 FILE    *fp;
 PERM    *px;
 {
-     u_int      i;
+     unsigned int      i;
      
      if ( px == (PERM *)NULL )
      {  fprintf(fp,"Permutation: NULL\n");      return;         }
      fprintf(fp,"Permutation: size: %u\n",px->size);
-     if ( px->pe == (u_int *)NULL )
+     if ( px->pe == (unsigned int *)NULL )
      {  fprintf(fp,"NULL\n");   return;         }
      for ( i=0; i<px->size; i++ )
 	if ( ! (i % 8) && i != 0 )
@@ -449,7 +449,7 @@ void    v_foutput(fp,x)
 FILE    *fp;
 VEC     *x;
 {
-     u_int      i, tmp;
+     unsigned int      i, tmp;
      
      if ( x == (VEC *)NULL )
      {  fprintf(fp,"Vector: NULL\n");   return;         }
@@ -469,7 +469,7 @@ void    m_dump(fp,a)
 FILE    *fp;
 MAT     *a;
 {
-	u_int   i, j, tmp;
+	unsigned int   i, j, tmp;
      
      if ( a == (MAT *)NULL )
      {  fprintf(fp,"Matrix: NULL\n");   return;         }
@@ -496,7 +496,7 @@ void    px_dump(fp,px)
 FILE    *fp;
 PERM    *px;
 {
-     u_int      i;
+     unsigned int      i;
      
      if ( ! px )
      {  fprintf(fp,"Permutation: NULL\n");      return;         }
@@ -514,7 +514,7 @@ void    v_dump(fp,x)
 FILE    *fp;
 VEC     *x;
 {
-     u_int      i, tmp;
+     unsigned int      i, tmp;
      
      if ( ! x )
      {  fprintf(fp,"Vector: NULL\n");   return;         }

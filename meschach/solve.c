@@ -32,7 +32,7 @@
 static	char	rcsid[] = "$Id: solve.c,v 1.1.1.1 2003-06-23 18:31:46 cees Exp $";
 
 #include	<stdio.h>
-#include        "matrix2.h"
+#include    "matrix2.h"
 #include	<math.h>
 
 
@@ -48,7 +48,7 @@ MAT	*matrix;
 VEC	*b, *out;
 double	diag;
 {
-	u_int	dim /* , j */;
+	unsigned int	dim /* , j */;
 	int	i, i_lim;
 	Real	**mat_ent, *mat_row, *b_ent, *out_ent, *out_col, sum, tiny;
 
@@ -101,7 +101,7 @@ MAT	*matrix;
 VEC	*b,*out;
 double	diag;
 {
-	u_int	dim, i, i_lim /* , j */;
+	unsigned int	dim, i, i_lim /* , j */;
 	Real	**mat_ent, *mat_row, *b_ent, *out_ent, *out_col, sum, tiny;
 
 	if ( matrix==(MAT *)NULL || b==(VEC *)NULL )
@@ -155,7 +155,7 @@ MAT	*U;
 VEC	*b,*out;
 double	diag;
 {
-    u_int	dim, i, i_lim;
+    unsigned int	dim, i, i_lim;
     Real	**U_me, *b_ve, *out_ve, tmp, invdiag, tiny;
     
     if ( ! U || ! b )
@@ -208,7 +208,7 @@ VEC	*Dsolve(A,b,x)
 MAT	*A;
 VEC	*b,*x;
 {
-    u_int	dim, i;
+    unsigned int	dim, i;
     Real	tiny;
     
     if ( ! A || ! b )
@@ -238,7 +238,7 @@ MAT	*L;
 VEC	*b, *out;
 double	diag;
 {
-    u_int	dim;
+    unsigned int	dim;
     int		i, i_lim;
     Real	**L_me, *b_ve, *out_ve, tmp, invdiag, tiny;
     

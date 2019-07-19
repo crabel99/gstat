@@ -29,7 +29,7 @@
 /* Deallocation of static arrays */
 
 
-#include <stdio.h>
+#include  <stdio.h>
 #include  "matrix.h"
 #include  "meminfo.h"
 #ifdef COMPLEX   
@@ -223,7 +223,7 @@ int mark;
 int mem_stat_free_list(mark,list)
 int mark,list;
 {
-   u_int i,j;
+   unsigned int i,j;
    int	 (*free_fn)();
 
    if ( list < 0 || list >= MEM_CONNECT_MAX_LISTS 
@@ -281,7 +281,7 @@ void mem_stat_dump(fp,list)
 FILE *fp;
 int list;
 {
-   u_int i,j,k=1;
+   unsigned int i,j,k=1;
 
    if ( list < 0 || list >= MEM_CONNECT_MAX_LISTS 
        || mem_connect[list].free_funcs == NULL )
