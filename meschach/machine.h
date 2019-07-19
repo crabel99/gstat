@@ -22,7 +22,7 @@
 #define HAVE_BZERO 1
 #define CHAR0ISDBL0 1
 /* #undef WORDS_BIGENDIAN */
-#define U_INT_DEF 1
+/* #undef U_INT_DEF */
 /* #undef VARARGS */
 #define HAVE_PROTOTYPES 1
 #define HAVE_PROTOTYPES_IN_STRUCT 1
@@ -53,7 +53,7 @@
 
 /* for basic or larger versions */
 /* #undef COMPLEX */
-/* #undef SPARSE */
+#define SPARSE 1
 
 /* for loop unrolling */
 /* #undef VUNROLL */
