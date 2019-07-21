@@ -36,17 +36,17 @@
 #include "defs.h"
 
 #ifdef HAVE_GETOPT_H
-# include <getopt.h>
+#include <getopt.h>
 #endif
 #ifdef HAVE_UNISTD_H
-# include <unistd.h> /* isatty() */
+#include <unistd.h> /* isatty() */
 #endif
 #ifndef HAVE_GETOPT
-# include "getopt.h"
+#include "getopt.h"
 #endif
 
 #ifdef HAVE_LIBCSF
-# include "csf.h"
+#include "csf.h"
 #endif
 
 #include "userio.h"
