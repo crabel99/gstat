@@ -193,4 +193,16 @@ meschach/macheps
 makefile
 gstatinc/
 lib/
-meschach/*.a
+makefile
+cmd/zincmap.eas
+include/err.h
+include/matrix.h
+include/matrix2.h
+include/meminfo.h
+include/sparse.h
+include/sparse2.h
+meschach/macheps
+meschach/meschach.a
+src/makefile
+src/version.h
+meschach/machine.h
