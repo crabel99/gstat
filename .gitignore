@@ -206,3 +206,7 @@ meschach/meschach.a
 src/makefile
 src/version.h
 meschach/machine.h
+config/
+configure
+meschach/configure
+src/config.hin

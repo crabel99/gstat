@@ -1,3 +1,4 @@
+# @configure_input@
 #
 # Makefile for Meschach via autoconf
 #
@@ -214,4 +215,3 @@ tstpxvec: tstpxvec.o meschach.a
 
 gstat-lib:	meschach.a
 	ar ruv ../lib/libgstat.a *.o
-	cp *.h ../gstatinc

@@ -1,3 +1,4 @@
+# @configure_input@
 #######
 # makefile.in: derived from the gnuplot 3.6 (beta) Makefile.in
 # at ftp://cmpc1.phys.soton.ac.uk/

@@ -1,3 +1,4 @@
+# @configure_input@
 # 
 # gstat makefile, mostly copied from gnuplot's (3.6) makefile
 # ./configure will convert this file into ./makefile
@@ -28,21 +29,23 @@ INSTALL_DATA = @INSTALL_DATA@
 DEST = bin
 INSTALLDIR = @prefix@
 BINDIR = @prefix@/bin
-VERSION = @version@
+VERSION = @PACKAGE_VERSION@
 MACHINE =
+package = @PACKAGE_NAME@
+tarname = @PACKAGE_TARNAME@
 
 LINUXFILES = /usr/local/bin/gstat \
 	/usr/local/bin/gnuplot \
 	/usr/local/bin/gnuplot_x11 \
 	/usr/local/share/gnuplot.gih \
- 	./COPYING 
+ 	./COPYING
 
 MESCHACH_HDRS = err.h machine.h matrix.h matrix2.h meminfo.h sparse.h sparse2.h
 
 src/gstat:	@LIB_MESCHACH@
 	(cd src; make)
 
-#configure:	configure.in
+#configure:	configure.ac
 #	autoconf
 
 makefile:		makefile.in configure
