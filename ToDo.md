@@ -8,7 +8,6 @@ gstat-lib:	$(OBJS)
 	cp $(LIBHEADERS) ../gstatinc
 	gcc -shared -fPIC -Wl,-soname,libgstat.so.2 -o ../lib/libgstat.so.2.5.2 $(OBJS) $(MESCHACH_OBJS) -lc
 
-2. In the configure script for meschach the -fPIC needs to be added to $CFLAGS
 3. If the library is to be compiled meschach needs to have --with-sparse set.
 4. In src/make file the mfun.o line has to be removed. There is no correspondinc *.c
 MESCHACH_OBJS = \

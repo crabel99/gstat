@@ -1,12 +1,13 @@
 dnl Process this file with autoreconf to produce a configure script.
-AC_INIT([gstat],[2.5.3])
+AC_INIT([gstat],[2.5.3],[mailto:geostatitics@52north.org (subscription required)],[],[http://www.gstat.org/])
 AC_CONFIG_SRCDIR(src/gstat.c)
 AC_PREREQ([2.69])
 AC_CONFIG_HEADERS(src/config.h:src/config.hin)
 AC_CONFIG_FILES([makefile
                  meschach/makefile
                  src/makefile])
-version=$PACKAGE_VERSION
+version=${PACKAGE_VERSION}
+AC_SUBST(version)
 target=`uname -m`
 AC_SUBST(target)
 

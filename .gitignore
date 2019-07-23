@@ -210,3 +210,8 @@ config/
 configure
 meschach/configure
 src/config.hin
+cmd/znsqdcov
+cmd/zincok.out
+cmd/sqd_okvr
+cmd/sqd_ckvr
+meschach/machine.h
