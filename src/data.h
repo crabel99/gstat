@@ -1,5 +1,6 @@
 #ifndef DATA_H
-#	define DATA_H /* avoid multiple inclusion */
+#define DATA_H /* avoid multiple inclusion */
+
 #include <limits.h> /* INT_MAX */
 #include <float.h> /* FLT_MAX */
 
@@ -138,7 +139,7 @@ void free_d_vector(D_VECTOR *v);
 
 /* CW added, FTTB copies of DATA members
  * SEARCH_CRITERIA should become part of DATA
- * Dit zijn degene die ik begrijp
+ * These are the ones I understand
  */
 typedef struct {
  /* DATA::prob sample later */
@@ -225,7 +226,7 @@ typedef struct {		/* structure that holds data info and lists */
 	DPOINT **list;		/* list of data points, of length n_list */
 	DPOINT *P_base;		/* base for pointer array, if allocated blockwise */
 #ifdef HAVE_EXT_DBASE
-/* CW members when data is held external (DATA_TYPE== DATA_EXT_DBASE) */
+/* CW members when data is held external (DATA_TYPE == DATA_EXT_DBASE) */
 	void   *ext_dbase;  /* ptr to EXTDBASE_LINK struct */
 /* CW end of edits */
 #endif

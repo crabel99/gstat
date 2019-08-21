@@ -215,3 +215,11 @@ cmd/zincok.out
 cmd/sqd_okvr
 cmd/sqd_ckvr
 meschach/machine.h
+meschach/machine.h
+src/lex.c
+src/parse.c
+src/parse.h
+src/version.h
+meschach/makefile
+src/config.hin
+configure

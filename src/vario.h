@@ -1,8 +1,8 @@
 #ifndef VARIO_H
-#	define VARIO_H /* avoid multiple inclusion */
+#define VARIO_H /* avoid multiple inclusion */
 
 typedef enum {
-	NOTSPECIFIED = 0,
+	NOTSPECIFIED,
 	SEMIVARIOGRAM,
 	CROSSVARIOGRAM,
 	COVARIOGRAM,
@@ -15,7 +15,7 @@ extern const char *vgm_type_str[];
 #define LENGTH_OF_MODEL 100 /* max string length for one variogram model */
 
 typedef enum {
-	ZERO_DEFAULT = 0,
+	ZERO_DEFAULT,
 	ZERO_INCLUDE,
 	ZERO_AVOID,
 	ZERO_SPECIAL
